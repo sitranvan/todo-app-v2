@@ -1,38 +1,85 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 .App {
-  text-align: center;
+    text-align: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: #3F4E4F;
+}
+.todo-app {
+    width: 350px;
+    min-height: 300px;
+    background-color: white;
+    margin: 0 auto;
+    padding: 20px 10px;
+    border-radius: 5px;
+    transform: translateY(50px);
+}
+.title {
+    font-size: 30px;
+    margin-top: 10px;
+    color:#0F3D3E;
+}
+.form {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    height: 35px;
+    padding: 0 20px;
+}
+.form input {
+    flex: 1;
+    height: 100%;
+    font-size: 15px;
+    border: 1px solid #18978F;
+    outline: none;
+    padding: 0 10px;
+    border-radius: 4px 0 0 4px;
+    background-color: transparent ;
+}
+.create-update {
+    width: 60px;
+    height: 100%;
+    border: 1px solid #18978F;
+    outline: none;
+    background-color: #18978F;
+    font-size: 20px;
+    color: white;
+
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+.list {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;  
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 16px;
+    height: 35px;
+    /* background-color: rgb(82, 208, 183); */
+    padding: 0 20px;
+    border-radius: 3px;
+    color: #333;
 }
-
-.App-link {
-  color: #61dafb;
+.action {
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.edit,.remove, .check{
+    font-size: 18px;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    color: rgb(59, 23, 84);
+    /* text-decoration: line-through; */
 }
